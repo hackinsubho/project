@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BOOKPEDIA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+<style>
+h1 {	
+    font: 100 30px/0.9 'Leckerli One', Helvetica, sans-serif;
+  color: #ff7b4b;
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+  
+  }
+.dropbtn {
+    background-color: #FF9200;
+    color: white;
+    padding: 14px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 10px;
+  
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 9px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #D17800}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #D17800;
+}
+
+
+div.img { 
+    
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}	
+
+.row {
+    padding: 0 80px;
+}
+   
+
+#header-wrapper {
+        left: 0;
+        line-height: 80px;
+        z-index: 998;
+	background: #f4f4f4;
+    }
+
+.bookpedia-logo {
+    margin: 0;
+    position: relative;
+    top: 9px;
+    float:left;
+
+}
+.tracks {
+    float: right;
+    top: 5px;
+}
+i {	position:absolute;
+	font-size: 20px;
+	line-height: 20px;
+}
+#content {width: 90%; height: 100%}   
+#left {width: 100px; height: 100%; float: left; background-color: white; border-right: solid white}
+   #right {margin-left: 105px; height: 100%; background-color: white}
+.relative1{ position: relative;
+    left: 100px; }
+.relative2{position: relative;
+  left:200px;}
+.relative3{position: relative;
+  left:300px;}
+.relative4{position: relative;
+  left:400px;}
+.img1 {
+margin-left: 155px;}
+
+
+</style>
+</head>
+<body>
+<table style="width:100% background: #f4f4f4 float:right;"><tr style="float:right;">
+<a class="tracks" href="login.html" title="Log In" style="text-decoration:none;"><img width="30px" height="33px" src="images/Login.png"><p> </p></a>
+  <a class="tracks" href="signup.html" title="Sign Up" style="text-decoration:none;"><img width="36px" height="33px" src="images/signup.png"><p> </p></a>
+	       	<a class="tracks" href="#" title="Track Your Order" style="text-decoration:none;"><img width="30px" height="33px" src="images/tracks.png"><p> </p></a>
+
+</tr></table><table border="0S"  style="width:100% background-color: #f4f4f4;">
+<div id="header-wrapper">
+<div id="header" class="row">
+<div class="large-12 columns clearfix">
+<h1 class="bookpedia-logo"> 
+<tr style="float:left;"><td><a href="index.html"><img width="60px" height="72px" src="images/logo1.png"></a></td>
+<td><h1>BOOKPEDIA</br><i>Your Favourite College Book Store !</i></h1></td></tr>
+</div>
+</div>
+</div></table>
+<div class="dropdown">
+  <button class="dropbtn"><img width="30px" height="35px" src="images/departments.png"><strong>Departments</strong></button>
+  <div class="dropdown-content">
+    <a href="Auto.html"><img width="15px" height="20px" src="images/automobile.png">AUTOMOBILE</a>
+    <a href="Civil.html"><img width="15px" height="20px" src="images/civil.png">CIVIL</a>
+    <a href="CS.html"><img width="15px" height="20px" src="images/cs.png">COMPUTER SCIENCE</a>
+    <a href="Electrical.html"><img width="15px" height="20px" src="images/electrical.png">ELECTRICAL</a>
+    <a href="EC.html"><img width="15px" height="20px" src="images/ec.png">ELECTRONICS & COMMUNICATION</a>
+    <a href="IS.html"><img width="15px" height="20px" src="images/is.png">INFORMATION SCIENCE</a>
+    <a href="IP.html"><img width="15px" height="20px" src="images/ip.png">INDUSTRIAL PRODUCTION</a>
+    <a href="Mech.html"><img width="15px" height="20px" src="images/me.png">MECHANICAL</a>
+   </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><img width="30px" height="35px" src="images/payment.png"><b>Payments</b></button>
+  <div class="dropdown-content">
+    <a href="#"><img width="15px" height="20px" src="images/Orders.png"> My Orders</a>
+        <a href="#"><img width="15px" height="20px" src="images/Cart.png"> Visit Cart</a>
+  </div>
+</div>
+
+
+
+<h1 style="text-align:center"> First year </h1><br/><br/>
+<a href="auto1book1.html" >
+<img class="img1" src="images1/1sem.jpeg" width="120" height="140" />
+</a>
+<a href="auto1book2.html" >
+<img class="relative1" src="images1/1sem.jpg" width="120" height="140" />
+</a>
+<a href="auto1book3.html" >
+<img class="relative2" src="images1/chemyc.jpg" width="120" height="140" />
+</a>
+<a href="auto1book3.html" >
+<img class="relative3" src="images/web.jpg" width="120" height="140" />
+</a>
+<a href="auto1book4.html" >
+<img class="relative4" src="images/web.jpg" width="120" height="140" />
+</a><br/><br/>
+
+<h1 style="text-align:center"> Second year </h1><br/><br/>
+<a href="auto1book1.html" >
+<img class="img1" src="images1/is5.jpg" width="120" height="140" />
+</a>
+<a href="auto1book2.html" >
+<img class="relative1" src="images1/is6.jpg" width="120" height="140" />
+</a>
+<a href="auto1book3.html" >
+<img class="relative2" src="images1/is51.jpg" width="120" height="140" />
+</a>
+<a href="auto1book3.html" >
+<img class="relative3" src="images/web.jpg" width="120" height="140" />
+</a>
+<a href="auto1book4.html" >
+<img class="relative4" src="images/web.jpg" width="120" height="140" />
+</a><br/><br/>
+
+
+<h1 style="text-align:center"> Third year </h1><br/><br/>
+<a href="auto1book1.html" >
+<img class="img1" src="images/web.jpg" width="120" height="140" />
+</a>
+<a href="auto1book2.html" >
+<img class="relative1" src="images/web.jpg" width="120" height="140" />
+</a>
+<a href="auto1book3.html" >
+<img class="relative2" src="images/web.jpg" width="120" height="140" />
+</a>
+<a href="auto1book3.html" >
+<img class="relative3" src="images/web.jpg" width="120" height="140" />
+</a>
+<a href="auto1book4.html" >
+<img class="relative4" src="images/web.jpg" width="120" height="140" />
+</a><br/><br/>
+
+
+<h1 style="text-align:center"> Fourth year </h1><br/><br/>
+<a href="auto1book1.html" >
+<img class="img1" src="images/web.jpg" width="120" height="140" />
+</a>
+<a href="auto1book2.html" >
+<img class="relative1" src="images/web.jpg" width="120" height="140" />
+</a>
+<a href="auto1book3.html" >
+<img class="relative2" src="images/web.jpg" width="120" height="140" />
+</a>
+<a href="auto1book3.html" >
+<img class="relative3" src="images/web.jpg" width="120" height="140" />
+</a>
+<a href="auto1book4.html" >
+<img class="relative4" src="images/web.jpg" width="120" height="140" />
+</a><br/><br/>
+
+</body>
+</html>

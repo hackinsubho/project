@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BOOKPEDIA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+<style>
+h1 {	
+    font: 100 30px/0.9 'Leckerli One', Helvetica, sans-serif;
+  color: #ff7b4b;
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+  
+  }
+.dropbtn {
+    background-color: #FF9200;
+    color: white;
+    padding: 14px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 10px;
+  
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 9px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #D17800}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #D17800;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 20%;
+      margin: auto;
+  }
+
+div.img { 
+    
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}	
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+	
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+	
+    padding: 15px;
+    
+}
+
+.row {
+    padding: 0 80px;
+}
+   
+
+#header-wrapper {
+        left: 0;
+        line-height: 80px;
+        z-index: 998;
+	background: #f4f4f4;
+    }
+
+.bookpedia-logo {
+    margin: 0;
+    position: relative;
+    top: 9px;
+    float:left;
+
+}
+.tracks {
+    float: right;
+    top: 5px;
+}
+i {	position:absolute;
+	font-size: 20px;
+	line-height: 20px;
+}
+#content {width: 90%; height: 100%}   
+#left {width: 100px; height: 100%; float: left; background-color: white; border-right: solid white}
+   #right {margin-left: 105px; height: 100%; background-color: white}
+</style>
+</head>
+<body>
+<table style="width:100% background: #f4f4f4 float:right;"><tr style="float:right;">
+<a class="tracks" href="login.html" title="Log In" style="text-decoration:none;"><img width="30px" height="33px" src="images/Login.png"><p> </p></a>
+  <a class="tracks" href="signup.html" title="Sign Up" style="text-decoration:none;"><img width="36px" height="33px" src="images/signup.png"><p> </p></a>
+	       	<a class="tracks" href="#" title="Track Your Order" style="text-decoration:none;"><img width="30px" height="33px" src="images/tracks.png"><p> </p></a>
+
+</tr></table>
+<div id="header-wrapper">
+<div id="header" class="row">
+<div class="large-12 columns clearfix">
+<h1 class="bookpedia-logo"> 
+<a href="index.html"><img width="60px" height="72px" src="images/logo1.png"></a>
+<h1>BOOKPEDIA</br><i>Your Favourite College Book Store !</i></h1>
+</div>
+</div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><img width="30px" height="35px" src="images/departments.png"><strong>Departments</strong></button>
+  <div class="dropdown-content">
+    <a href="#"><img width="15px" height="20px" src="images/automobile.png">AUTOMOBILE</a>
+    <a href="#"><img width="15px" height="20px" src="images/civil.png">CIVIL</a>
+    <a href="#"><img width="15px" height="20px" src="images/cs.png">COMPUTER SCIENCE</a>
+    <a href="#"><img width="15px" height="20px" src="images/electrical.png">ELECTRICAL</a>
+    <a href="#"><img width="15px" height="20px" src="images/ec.png">ELECTRONICS & COMMUNICATION</a>
+    <a href="#"><img width="15px" height="20px" src="images/is.png">INFORMATION SCIENCE</a>
+    <a href="#"><img width="15px" height="20px" src="images/ip.png">INDUSTRIAL PRODUCTION</a>
+    <a href="#"><img width="15px" height="20px" src="images/me.png">MECHANICAL</a>
+   </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><img width="30px" height="35px" src="images/payment.png"><b>Payments</b></button>
+  <div class="dropdown-content">
+    <a href="#"><img width="15px" height="20px" src="images/Orders.png"> My Orders</a>
+        <a href="#"><img width="15px" height="20px" src="images/Cart.png"> Visit Cart</a>
+  </div>
+</div>
+
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/COMPUTER_NETWORKS1.jpg" alt="COMPUTER_NETWORKS" width="170" height="100">
+      </div>
+
+      <div class="item">
+        <img src="images/JAVA_SE1.jpg" alt="JAVA_SE" width="170" height="100">
+      </div>
+    
+      <div class="item">
+        <img src="images/SOFTWARE_ENGINEERING1.jpeg" alt="SOFTWARE_ENGINEERING" width="170" height="100">
+      </div>
+
+      <div class="item">
+        <img src="images/WEB_PROGRAMMING1.jpeg" alt="WEB_PROGRAMMING" width="170" height="100">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+</body>
+</html>
